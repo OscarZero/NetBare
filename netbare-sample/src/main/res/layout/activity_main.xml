@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/deviceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="0.5"
+            android:text="@string/inputDeviceID"
+            android:textColor="@color/normal_black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:autoSizeMaxTextSize="20dp"
+            android:background="@drawable/deviceidunderline" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:text="@string/changeId"
+            android:textSize="20dp"
+            android:id="@+id/changeDeviceIdBtn"/>
+        <TextView
+            android:id="@+id/autoText"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="0"
+            android:text="@string/autoTextString"
+            android:textColor="@color/normal_black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:minLines="2"
+            android:singleLine="false"/>
+        <CheckBox
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:id="@+id/autoCheckBox"
+            />
+
+
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/package_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_input"
+        android:layout_above="@+id/refresh_layer"
+        >
+
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/refresh_layer"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/refresh_list" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

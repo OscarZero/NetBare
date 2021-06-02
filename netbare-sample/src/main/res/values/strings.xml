@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">NetBare</string>
+    <string name="app_title">20210519</string>
+
+    <string name="save_device_id">储存ID</string>
+    <string name="start_netbare">启动服务</string>
+    <string name="stop_netbare">停止服务</string>
+    <string name="refresh_list">刷新清单</string>
+    <string name="secondText">秒</string>
+    <string name="deviceText">Device ID</string>
+    <string name="changeId">修改</string>
+    <string name="autoTextString">自动监测</string>
+    <string name="whiteTitleText">白名单</string>
+    <string name="blackTitleText">黑名单</string>
+    <string name="monitorBtnStartText">执行</string>
+    <string name="monitorBtnStopText">停止</string>
+    <string name="reloadingBackendData">刷新中</string>
+    <string name="frequentReloadBackendData">请稍候刷新</string>
+    <string name="inputDeviceID">请输入DeviceId</string>
+    <string name="monitorTimeTooShortTip">监控时间必须大于30秒</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    //device id input dialog
+    <string name="dialogTitleText">输入</string>
+    <string name="dialogContextText">请输入DeviceId</string>
+    <string name="dialogOkBtnText">确认</string>
+    <string name="dialogCancelBtnText">取消</string>
+
+    //spinnerWindpw
+    <string name="autoMonitorTipText">自动监测</string>
+
+</resources>

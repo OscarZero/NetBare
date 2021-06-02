@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="130dp"
+    android:id="@+id/list_item_bg">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        tools:text="qq" />
+    <TextView
+        android:id="@+id/lasttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        tools:text="time" />
+
+    <Button
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_netbare"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/time_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/lasttime"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        tools:text="启动间隔 300秒" />
+    <TextView
+        android:id="@+id/time_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/lasttime"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@id/time_interval"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        tools:text="检测时长 30秒" />
+
+
+</RelativeLayout>
